@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+<style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #515e97 !important;
+}
+
+.pic {
+    width: 500px;
+    height: 400px;
+}
+
+#startChat {
+    padding: 5px 50px;
+   margin-top: 20px;
+   margin-right: 200px;
+   border-radius: 7px;
+   border-color: white;
+}
+
+.text {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: antiquewhite;
+    position: absolute;
+    margin-bottom: 120px;
+    margin-left: 290px;
+}
+</style>
+
+
+
+</head>
+<body>
+    <p class="text">Hi i'm Botty, Lets Chat!</p>
+    <div class="container">
+        <img class="pic" src="pic.gif" alt="">
+       
+    </div>
+
+    <button id="startChat">
+        Start Chat
+    </button>
+
+    <script>
+        function chat() {
+            alert("Hello!");
+
+            var yourName = prompt("What is your name?");
+            alert("Hello, " + yourName);
+
+            var food = prompt("What is your favorite food?");
+            alert("Wow! I like, " + food + " too!");
+
+            var shareFood = confirm("Tara let's eat?");
+
+            if (shareFood == true) {
+                alert("Thank you!");
+            } else {
+                alert("See you next time!");
+            }
+        }
+
+        document.getElementById('startChat').addEventListener('click', chat);
+    </script>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
